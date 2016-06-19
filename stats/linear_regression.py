@@ -4,6 +4,7 @@ import statsmodels.api as sm
 import numpy as np
 
 loansData = pd.read_csv('https://github.com/Thinkful-Ed/curric-data-001-data-sets/raw/master/loans/loansData.csv')
+loansData.dropna(inplace=True)
 
 # print(loansData['Interest.Rate'].head())
 def cleans(dat, idx, typ):
