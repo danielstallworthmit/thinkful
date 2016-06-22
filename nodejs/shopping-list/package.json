@@ -1,0 +1,20 @@
+{
+  "name": "shopping-list",
+  "version": "0.0.0",
+  "description": "shopping list",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "shopping",
+    "list"
+  ],
+  "author": "Daniel",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
