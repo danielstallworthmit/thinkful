@@ -16,5 +16,9 @@
     "assert": "^1.4.1",
     "body-parser": "^1.15.2",
     "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0"
   }
 }

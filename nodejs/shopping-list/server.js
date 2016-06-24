@@ -9,8 +9,8 @@ var Storage = function(){
 
 Storage.prototype.add = function(name){
 	var item = {'name': name, 'id': this.id};
-	this.items[this.id]=item;
-	this.id+= 1;
+	this.items[this.id] = item;
+	this.id += 1;
 	return item;
 };
 
@@ -38,8 +38,8 @@ app.post('/items',jsonParser,function(req,res){
 app.delete('/items/:id',function(req,res){
 	var id = req.params.id;
 	try{
+		res.status(200).json(storage.items[id]);
 		delete storage.items[id];
-		res.status(200);
 	}
 	catch(err){
 		//assert(err.arguments[0],'doesNotExist');
@@ -53,8 +53,9 @@ app.put('/items/:id',jsonParser,function(req,res){
 	}
 
 	try{
-		var id = req.params.id;
+		var id = Number(req.params.id);
 		storage.items[id].name = req.body.name;
+		res.status(200).json(storage.items[id]);
 	}
 	catch(err){
 		var item = {'name': req.body.name, 'id': id}; //storage.add(req.body.name);
@@ -63,4 +64,7 @@ app.put('/items/:id',jsonParser,function(req,res){
 	}
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 8080);
+
+exports.app = app;
+exports.storage = storage;
