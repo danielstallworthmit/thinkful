@@ -130,7 +130,7 @@ ShoppingList.prototype.onDeleteItemClicked = function(event) {
     var id = $(event.target).parents('li').data('id');
     var item = $(event.target).parents('li');
     this.deleteItem(id);
-    item.remove();
+    //item.remove();
 };
 ShoppingList.prototype.getItems = function() {
     var ajax = $.ajax('/items', {
