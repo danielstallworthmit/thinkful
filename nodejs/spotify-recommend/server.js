@@ -30,9 +30,12 @@ app.get('/search/:name', function(req, res) {
     searchReq.on('end', function(item) {
         var artist = item.artists.items[0].id;
 	//app.get('/artists/:id/related-artists', function(req, res) {
-   	 var related = getFromApi('artists/'+ artist +'/related-artists').artists[0];
+   	var related = getFromApi('artists/'+ artist +'/related-artists');
 
-        res.json(related);
+        related.on('end', function(item) {
+		var rels = item.artists[0]
+		res.json(rels)
+	});
     });
 
     searchReq.on('error', function(code) {
