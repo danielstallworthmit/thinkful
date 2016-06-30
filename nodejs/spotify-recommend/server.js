@@ -33,7 +33,7 @@ app.get('/search/:name', function(req, res) {
    	var related = getFromApi('artists/'+ artist +'/related-artists');
 
         related.on('end', function(item) {
-		var rels = item.artists[0]
+		var rels = item.artists
 		res.json(rels)
 	});
     });
