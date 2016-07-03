@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
 import numpy as np
+from sklearn.cross_validation import KFold
 
 loansData = pd.read_csv('https://github.com/Thinkful-Ed/curric-data-001-data-sets/raw/master/loans/loansData.csv')
 loansData.dropna(inplace=True)
@@ -21,11 +22,11 @@ fico = loansData['FICO.Score']
 # Histogram for FICO Score
 plt.figure()
 loansData['FICO.Score'].hist()
-plt.show()
+#plt.show()
 
 # scatter_matrix
 pd.scatter_matrix(loansData, alpha=0.05, figsize=(10,10), diagonal='hist')
-plt.show()
+#plt.show()
 
 y = np.matrix(intrate).transpose()
 x1 = np.matrix(fico).transpose()
