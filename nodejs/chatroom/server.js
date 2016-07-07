@@ -21,7 +21,7 @@ io.on('connection', function (socket) {
 	socket.username = username;
 	++numUsers;
 	addedUser = true;
-	socket.emit('login', {
+	io.emit('login', {
 	   numUsers: numUsers
 	});
 	// echo globally (all clients) that a person has connected
@@ -32,8 +32,9 @@ io.on('connection', function (socket) {
     });
 
     socket.on('message', function(message) {
+	socket.color = message.color;
         console.log('Received message:', message);
-        socket.broadcast.emit('message', message);
+        io.emit('message', message);
     });
 
     socket.on('disconnect', function () {
@@ -41,7 +42,8 @@ io.on('connection', function (socket) {
 	--numUsers;
 
 	// echo globally that this client has left
-	socket.broadcast.emit('user left', {
+	io.emit('message', {message: socket.username + ' has left.', color: socket.color});
+	io.emit('user left', {
 	    username: socket.username,
 	    numUsers: numUsers
 	});
@@ -50,4 +52,4 @@ io.on('connection', function (socket) {
 
 });
 
-server.listen(3000);
+server.listen(process.env.PORT || 8080);
