@@ -7,5 +7,25 @@
 <script src="/socket.io/socket.io.js"></script>
 <script src="main.js"></script> 
 
-<input type="text">
-<div id="messages"></div>
+<style>
+    .container {
+	text-align: center;
+	margin: 100px auto;
+	font-size: 1.5em;
+    }
+</style>
+
+
+<div class="container">
+    <div id="connectedinfo"></div>
+    <div id="userinfo">
+	<p>ENTER YOUR USERNAME:</p>
+	<input id="userfield" type="text">
+    </div>
+    <div id="chat content">
+	<p>ENTER YOUR MESSAGES HERE:</p>
+        <input id="messageinput" type="text">
+        <div id="messages"></div>
+    </div>
+</div>
+
