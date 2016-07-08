@@ -5,7 +5,7 @@
     <EditText
         android:layout_width="500px"
         android:layout_height="wrap_content"
-        android:id="@+id/editText3"
+        android:id="@+id/searchText"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -18,8 +18,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="search"
-        android:id="@+id/button2"
+        android:id="@+id/searchButton"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/editText3"
-        android:layout_toEndOf="@+id/editText3" />
+        android:layout_toRightOf="@+id/searchText"
+        android:layout_toEndOf="@+id/searchText" />
 </RelativeLayout>
