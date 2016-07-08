@@ -10,9 +10,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.scroll_layout_example);
-        WebView webview = (WebView) findViewById(R.id.web_view);
-        webview.setWebViewClient(new WebViewClient());
-        webview.loadUrl("http://www.thinkful.com");
+        setContentView(R.layout.find_text);
+        //WebView webview = (WebView) findViewById(R.id.web_view);
+        //webview.setWebViewClient(new WebViewClient());
+        //webview.loadUrl("http://www.thinkful.com");
     }
 }
