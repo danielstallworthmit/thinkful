@@ -10,7 +10,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NoteListItemAdapter extends RecyclerView.Adapter<NoteListItemAdapter.ViewHolder> {
+public class  NoteListItemAdapter extends RecyclerView.Adapter<NoteListItemAdapter.ViewHolder> {
     private Context mContext;
     private RecyclerView mRecyclerView;
     private ArrayList<NoteListItem> mNoteListItems = new ArrayList<NoteListItem>();
@@ -18,7 +18,7 @@ public class NoteListItemAdapter extends RecyclerView.Adapter<NoteListItemAdapte
     public NoteListItemAdapter(Context context, RecyclerView recyclerView) {
         this.mContext = context;
         this.mRecyclerView = recyclerView;
-        this.mNoteListItems.add(new NoteListItem("This is your first note."));
+        this.mNoteListItems.add(new NoteListItem("Hello, this is a note note."));
     }
 
     @Override

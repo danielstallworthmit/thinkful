@@ -2,7 +2,7 @@ var pictionary = function() {
     var socket = io();
     var canvas, context;
     var drawing = false;
-    var guessBox, guesses;
+    var guessBox, guesses, myturn;
     var draw = function(position) {
         context.beginPath();
         context.arc(position.x, position.y,
@@ -17,7 +17,7 @@ var pictionary = function() {
     canvas.on('mousedown', function(event){
         drawing = true;
         canvas.on('mousemove', function(event) {
-            if (drawing) {
+            if (drawing && myturn) {
                 var offset = canvas.offset();
                 var position = {x: event.pageX - offset.left,
                         y: event.pageY - offset.top};
@@ -50,8 +50,39 @@ var pictionary = function() {
         guesses.text('Current Guess: ' + guess);
     };
 
+    var rightGuess = function(){
+        guesses.text('You are correct. Your turn to draw.');
+    };
+
     socket.on('message', addGuess);
-    socket.on('draw', draw)
+    socket.on('draw', draw);
+    socket.on('clearCanvas', function() {
+        context.clearRect ( 0 , 0 , canvas.width() , canvas.height() );
+    });
+    socket.on('wordGuessed', function(msg) {
+        socket.emit('message', rightGuess);
+        if(myturn = true) {
+            readytodraw.prop('value', 'Ready to draw!');
+        }
+    });
+    socket.on('youCanDraw', function(msg) {
+        if(myturn) {
+            myturn = false;
+            //status.text('status: online | Click Ready to draw! button to start drawing');
+        }
+        //chatcontent.append('<p>Click <strong>Ready to draw!</strong> button to draw.</p>');
+        //chatScrollDown();
+    });
+    socket.on('youDraw', function(word) {
+        myturn = true;
+        //canvas.css('background-color', '#fff');
+        myword = word; console.log(word);
+        //status.text('status: online | Your word is: ' + myword[0] + ' (difficulty: ' + myword[1] + ')');
+        //readytodraw.prop('value', 'Pass (' + timeleft + ')');
+        
+        // turn on drawing timer
+        //drawingTimer = setInterval( timerTick, 1000 );
+    });
 };
 
 $(document).ready(function() {
