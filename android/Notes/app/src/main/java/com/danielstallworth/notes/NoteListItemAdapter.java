@@ -18,12 +18,28 @@ public class  NoteListItemAdapter extends RecyclerView.Adapter<NoteListItemAdapt
     public NoteListItemAdapter(Context context, RecyclerView recyclerView) {
         this.mContext = context;
         this.mRecyclerView = recyclerView;
-        this.mNoteListItems.add(new NoteListItem("Hello, this is a note note."));
+        this.mNoteListItems.add(new NoteListItem("Hello, this is a note."));
+    }
+
+    public void addItem(NoteListItem item) {
+        mNoteListItems.add(0, item);
+        notifyItemInserted(0);
+    }
+
+    public void removeItem(int position) {
+        mNoteListItems.remove(position);
+        notifyItemRemoved(position);
     }
 
     @Override
     public NoteListItemAdapter.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(mContext).inflate(R.layout.note_list_item, viewGroup, false);
+        v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                removeItem(mRecyclerView.getChildLayoutPosition(v));
+            }
+        });
         return new ViewHolder(v);
     }
 
