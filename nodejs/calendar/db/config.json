@@ -1,0 +1,11 @@
+{
+	"production": {
+		"url": "mongodb://danieljs:pw1234@ds023704.mlab.com:23704/dcalendar"
+	},
+	"test": {
+		"url": "mongodb://localhost/calendar"
+	},
+	"development": {
+		"url": "mongodb://localhost/calendar"
+	}
+}
