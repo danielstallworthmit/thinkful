@@ -21,6 +21,7 @@ public class NotifyService extends IntentService {
     protected void onHandleIntent(Intent intent) {
         Notifier notifier = new Notifier();
         notifier.createNotification(this);
+        AlarmBroadcastReceiver.completeWakefulIntent(intent);
     }
 
 }

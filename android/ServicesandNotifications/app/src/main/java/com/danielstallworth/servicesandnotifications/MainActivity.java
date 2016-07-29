@@ -71,12 +71,12 @@ public class MainActivity extends AppCompatActivity {
         alarm.cancelAlarm(this);
     }
 
-    protected PendingIntent getMainActivityPendingIntent() {
-        Log.i("Alarm", "Alarm goes off.");
-        Intent intent = new Intent(this, MainActivity.class);
-        PendingIntent pendingIntent = PendingIntent.getActivity(this, 1234, intent, PendingIntent.FLAG_UPDATE_CURRENT);
-        return(pendingIntent);
-    }
+//    protected PendingIntent getMainActivityPendingIntent() {
+//        Log.i("Alarm", "Alarm goes off.");
+//        Intent intent = new Intent(this, MainActivity.class);
+//        PendingIntent pendingIntent = PendingIntent.getActivity(this, 1234, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+//        return(pendingIntent);
+//    }
 
     protected void displayNotification() {
         //Build your notification

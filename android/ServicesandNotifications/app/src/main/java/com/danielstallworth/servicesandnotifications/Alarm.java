@@ -30,7 +30,7 @@ public class Alarm {
         alarmMgr.setInexactRepeating(AlarmManager.ELAPSED_REALTIME,
                 SystemClock.elapsedRealtime() + 10 * 1000,
                 10 * 1000,
-                getMainActivityPendingIntent(context));
+                getBroadcastActivityPendingIntent(context));
         /*alarmMgr.set(AlarmManager.ELAPSED_REALTIME,
                 SystemClock.elapsedRealtime() + 10 * 1000,
                 getMainActivityPendingIntent());*/
@@ -45,7 +45,7 @@ public class Alarm {
     }
     protected void cancelAlarm(Context context) {
         AlarmManager alarmMgr = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
-        alarmMgr.cancel(getMainActivityPendingIntent(context));
+        alarmMgr.cancel(getBroadcastActivityPendingIntent(context));
 
         ComponentName receiver = new ComponentName(context, MyReceiver.class);
         PackageManager pm = context.getPackageManager();
@@ -55,11 +55,15 @@ public class Alarm {
                 PackageManager.DONT_KILL_APP);
     }
     protected PendingIntent getMainActivityPendingIntent(Context context) {
+        Intent intent = new Intent(context, MainActivity.class);
+        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        return(pendingIntent);
+    }
+
+    protected PendingIntent getBroadcastActivityPendingIntent(Context context) {
         Intent intent = new Intent(context, AlarmBroadcastReceiver.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, intent, 0);
 
-//        Intent intent = new Intent(context, MainActivity.class);
-//        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         return(pendingIntent);
     }
 }
