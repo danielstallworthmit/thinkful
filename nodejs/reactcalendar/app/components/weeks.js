@@ -4,8 +4,10 @@ var Day = require('./day')
 var Weeks = React.createClass({
   render() {
     var dayNames = this.props.dayNames
-    var days = this.props.weeks.map(function(week, index) {
-      return <Day key={index} week={week} dayNames={dayNames[index]}/>
+    var days = this.props.weeks.map(function(weeks) {
+      return weeks.map(function(week, index){
+        return <Day key={index} week={week} dayNames={dayNames[index]}/>
+      })
     })
 
     var containerStyle = {

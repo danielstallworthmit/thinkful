@@ -18,7 +18,7 @@ var Main = React.createClass({
   render() {
     return (
       <div style={{margin: "50px 0"}}>
-        <Weeks weeks={this.state.weeks[0]} dayNames={this.state.dayNames} />
+        <Weeks weeks={this.state.weeks} dayNames={this.state.dayNames} />
       </div>
     )
   }

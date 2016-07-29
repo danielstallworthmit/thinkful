@@ -4,8 +4,8 @@ var Day = React.createClass ({
   render() {
     var cardStyle = {
       background: '#f1f1f1',
-      width: 100,
-      height: 100,
+      width: '12%',
+      height: '17%',
       margin: 10,
       float: 'left',
       position: 'relative',
