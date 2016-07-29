@@ -80,19 +80,22 @@ public class MainActivity extends AppCompatActivity {
 
     protected void displayNotification() {
         //Build your notification
-        NotificationCompat.Builder nBuilder = new NotificationCompat.Builder(
-                this);
-        nBuilder.setContentTitle("Notification");
-        nBuilder.setContentText("This is a Notification");
-        nBuilder.setSmallIcon(R.drawable.thinkful);
+        Notifier notifier = new Notifier();
+        notifier.createNotification(this);
 
-        nBuilder.setContentIntent(getMainActivityPendingIntent());
-        nBuilder.setAutoCancel(true);
-
-        //post notification
-        NotificationManager mNotificationManager =
-                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        mNotificationManager.notify(notificationID, nBuilder.build());
+//        NotificationCompat.Builder nBuilder = new NotificationCompat.Builder(
+//                this);
+//        nBuilder.setContentTitle("Notification");
+//        nBuilder.setContentText("This is a Notification");
+//        nBuilder.setSmallIcon(R.drawable.thinkful);
+//
+//        nBuilder.setContentIntent(getMainActivityPendingIntent());
+//        nBuilder.setAutoCancel(true);
+//
+//        //post notification
+//        NotificationManager mNotificationManager =
+//                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+//        mNotificationManager.notify(notificationID, nBuilder.build());
     }
 
     @Override
