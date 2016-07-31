@@ -6,7 +6,7 @@ var Day = React.createClass ({
       background: '#f1f1f1',
       width: '12%',
       height: '17%',
-      margin: 10,
+      margin: 7,
       float: 'left',
       position: 'relative',
       display: 'flex',
@@ -15,12 +15,20 @@ var Day = React.createClass ({
       alignItems: 'center'
     }
 
-    return (
-      <div style={cardStyle} className={'panel panel-default'}>
-        <h5>{this.props.dayNames}</h5>
-        <h5>{this.props.week}</h5>
-      </div>
-    )
+    if (this.props.week > 0){
+      return (
+        <div style={cardStyle} className={'panel panel-default'}>
+          <h5>{this.props.dayNames}</h5>
+          <h4>{this.props.week}</h4>
+        </div>
+      )
+    }
+    else {
+      return (
+        <div style={cardStyle} className={'panel panel-default'}>
+        </div>
+      )
+    }
   }
 })
 

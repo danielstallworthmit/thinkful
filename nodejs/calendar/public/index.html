@@ -30,7 +30,7 @@ a, a:active, a:hover, a:visited {
 }
 div#main {
     display: flex;
-    align-events: center;
+    align-items: center;
     flex-direction: column;
 }
 input {
@@ -139,8 +139,8 @@ ShoppingList.prototype.getEvents = function() {
     });
     ajax.done(this.onGetEventsDone.bind(this));
 };
-ShoppingList.prototype.addEvent = function(summary) {
-    var event = {'summary': summary};
+ShoppingList.prototype.addEvent = function(summary, start, end) {
+    var event = {'summary': summary, 'start': start, 'end': end};
     var ajax = $.ajax('/events', {
         type: 'POST',
         data: JSON.stringify(event),
@@ -157,7 +157,7 @@ ShoppingList.prototype.deleteEvent = function(id) {
     ajax.done(this.getEvents.bind(this));
 };
 ShoppingList.prototype.editEvent = function(id, summary) {
-    var event = {'summary': summary, 'id': id};
+    var event = {'summary': summary, 'id': id, 'start': start, 'end': end};
     var ajax = $.ajax('/events/' + id, {
         type: 'PUT',
         data: JSON.stringify(event),

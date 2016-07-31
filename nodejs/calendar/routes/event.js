@@ -12,7 +12,7 @@ router.get('/events', function(req, res) {
 });
 
 router.post('/events', function(req, res) {
-	Event.save(req.body.name, function(err, event) {
+	Event.save(req.body, function(err, event) {
 		if(err) {
 			return res.status(400).json(err);
 		}
@@ -21,7 +21,7 @@ router.post('/events', function(req, res) {
 });
 
 router.put('/events/:id', function(req, res) {
-	Event.update(req.params.id, req.body.name, function(err, event) {
+	Event.update(req.params.id, req.body, function(err, event) {
 		if(err) {
 			return res.status(400).json(err);
 		}
