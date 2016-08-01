@@ -1,0 +1,142 @@
+phrase,summary,location,daysFromNowStart,weeksFromNowStart,monthsFromNowStart,yearsFromNowStart,startHour,daysFromNowEnd,weeksFromNowEnd,monthsFromNowEnd,yearsFromNowEnd,endHour,allDayFlag,repeatFrequency
+Grocery shopping at King Kullen Thursday at 11:30pm,Grocery shopping,King Kullen,thursday,0.0,0.0,0.0,11:30 PM,friday,0.0,0.0,0.0,12:30 AM,0,none
+Grocery shopping at Waldbaums from 4pm to 5pm,Grocery shopping,Waldbaums,,0.0,0.0,0.0,04:00 PM,,0.0,0.0,0.0,05:00 PM,0,none
+Clothes shopping Wednesday at 5:35pm at Nordstroms,Clothes shopping,Nordstroms,wednesday,0.0,0.0,0.0,05:35 PM,wednesday,0.0,0.0,0.0,06:35 PM,0,none
+Clothes shopping at Nordstroms in a month at 17:45,Clothes shopping,Nordstroms,0,0,1,0,05:45 PM,0,0,1,0,06:45 PM,0,none
+Clothes shopping at Nordstroms next Thursday at 5p,Clothes shopping,Nordstroms,nextthursday,0,0,0,05:00 PM,nextthursday,0,0,0,06:00 PM,0,none
+Clothes shopping at Nordstroms tomorrow at 0600,Clothes shopping,Nordstroms,1,0,0,0,06:00 AM,1,0,0,0,07:00 AM,0,none
+Clothes shopping at Nordstroms thursday to saturday,Clothes shopping,Nordstroms,thursday,0,0,0,12:00 AM,saturday,0,0,0,12:00 AM,1,none
+Clothes shopping at Nordstroms 23 sep in an hour,Clothes shopping,Nordstroms,09-23-13,0,0,0,1+0,09-23-13,0,0,0,2+0,0,none
+Shopping at Nordstroms 2 weeks from tomorrow in an hour,Shopping,Nordstroms,1,2,0,0,1+0,1,2,0,0,2+0,0,none
+Family vacation from 8/9-8/18,Family vacation,,08-09-13,0,0,0,12:00 AM,08-18-13,0,0,0,12:00 AM,1,none
+Family vacation from 8/1-8 at The Sandy Lane,Family vacation,The Sandy Lane,08-01-13,0,0,0,12:00 AM,08-08-13,0,0,0,12:00 AM,0,none
+Family vacation from 8/9-18 at The Sandy Lane,Family vacation,The Sandy Lane,08-09-13,0,0,0,12:00 AM,08-18-13,0,0,0,12:00 AM,1,none
+Family vacation from August 9th-18th in Mexico,Family vacation,Mexico,08-09-13,0,0,0,12:00 AM,08-18-13,0,0,0,12:00 AM,1,none
+Family vacation from August 9th-18 in Mexico,Family vacation,Mexico,08-09-13,0,0,0,12:00 AM,08-18-13,0,0,0,12:00 AM,1,none
+Family vacation from August 9-18 at The Marriot Hotel,Family vacation,The Marriot Hotel,08-09-13,0,0,0,12:00 AM,08-18-13,0,0,0,12:00 AM,1,none
+Soccer practice every Tuesday at noon,Soccer practice,,tuesday,0,0,0,12:00 PM,tuesday,0,0,0,01:00 PM,0,week
+Soccer practice next week at 6am at JFK High School,Soccer practice,JFK High School,0,1,0,0,06:00 AM,0,1,0,0,07:00 AM,0,none
+Soccer practice next month at 6am at JFK High School,Soccer practice,JFK High School,0,0,1,0,06:00 AM,0,0,1,0,07:00 AM,0,none
+Soccer practice at JFK High School every Tuesday at 6,Soccer practice,JFK High School,tuesday,0,0,0,06:00 PM,tuesday,0,0,0,07:00 PM,0,week
+Sams birthday every year on 5/16,Sams birthday,,05-16-13,0,0,0,12:00 AM,05-16-13,0,0,0,12:00 AM,1,year
+Lunch with John in Cupertino on Thursday from 11-1:30pm,Lunch with John,Cupertino,thursday,0,0,0,11:00 AM,thursday,0,0,0,01:30 PM,0,none
+Lunch with John in Cupertino on Thursday from 11-1:30 pm,Lunch with John,Cupertino,thursday,0,0,0,11:00 AM,thursday,0,0,0,01:30 PM,0,none
+Lunch with John in Cupertino on Thursday @12,Lunch with John,Cupertino,thursday,0,0,0,12:00 PM,thursday,0,0,0,01:00 PM,0,none
+"12p to 2p on May 5th, committee meeting",committee meeting,,05-05-13,0,0,0,12:00 PM,05-05-13,0,0,0,02:00 PM,0,none
+"12p to 2p on 5th of may, committee meeting",committee meeting,,05-05-13,0,0,0,12:00 PM,05-05-13,0,0,0,02:00 PM,0,none
+"12p to 2p on May 5th, committee meeting at 559 Madison Ave.",committee meeting,559 Madison Ave,05-05-13,0,0,0,12:00 PM,05-05-13,0,0,0,02:00 PM,0,none
+"23rd of May at 2000, Dinner with Andre",Dinner with Andre,,05-23-13,0,0,0,08:00 PM,05-23-13,0,0,0,09:00 PM,0,none
+"May 23rd at 8:00p, Dinner with Andre at Toku",Dinner with Andre,Toku,05-23-13,0,0,0,08:00 PM,05-23-13,0,0,0,09:00 PM,0,none
+"February 24 at 3pm - 4:40pm March 3,  Retreat at Hilton Hotel",Retreat,Hilton Hotel,02-24-14,0,0,0,03:00 PM,03-03-14,0,0,0,04:40 PM,0,none
+Vacation is in 4 weeks...,Vacation,,0,4,0,0,12:00 AM,0,4,0,0,12:00 AM,1,none
+Christmas is on December 25th.,Christmas,,12-25-13,0,0,0,12:00 AM,12-25-13,0,0,0,12:00 AM,1,none
+Homework 5 due next monday at 3 o'clock at 3 Towne Hall,Homework 5 due,3 Towne Hall,nextmonday,0,0,0,03:00 PM,nextmonday,0,0,0,04:00 PM,0,none
+Homework 5 due next sunday at 3 Towne Hall at 3pm,Homework 5 due,3 Towne Hall,nextsunday,0,0,0,03:00 PM,nextsunday,0,0,0,04:00 PM,0,none
+Homework 5 due next monday at 3 Towne Hall at 3,Homework 5 due,3 Towne Hall,nextmonday,0,0,0,03:00 PM,nextmonday,0,0,0,04:00 PM,0,none
+The retreat is from Jan 12 - 29. at The Beach House,The retreat,The Beach House,01-12-14,0,0,0,12:00 AM,01-29-14,0,0,0,12:00 AM,1,none
+Bake a cake tomorrow.,Bake a cake,,1,0,0,0,12:00 AM,1,0,0,0,12:00 AM,1,none
+Use Horizon today!,Use Horizon,,,0,0,0,12:00 AM,,0,0,0,12:00 AM,1,none
+Use Horizon! today,Use Horizon!,,,0,0,0,12:00 AM,,0,0,0,12:00 AM,1,none
+At arena 2:00pm Football Game,Football Game,arena,,0,0,0,02:00 PM,,0,0,0,03:00 PM,0,none
+Staff meeting on Monday at 9 am in conference room,Staff meeting,conference room,monday,0,0,0,09:00 AM,monday,0,0,0,10:00 AM,0,none
+Project meeting with Jason 4 pm tomorrow at coffee shop,Project meeting with Jason,coffee shop,1,0,0,0,04:00 PM,1,0,0,0,05:00 PM,0,none
+Let's have lunch at Joe's on the 3rd.,Let's have lunch,Joe's,05-03-13,0,0,0,12:00 AM,05-03-13,0,0,0,12:00 AM,1,none
+Boys ski trip at Victor's from the 3rd to the 6th,Boys ski trip,Victor's,05-03-13,0,0,0,12:00 AM,05-06-13,0,0,0,12:00 AM,1,none
+The exam is in 3 weeks from tomorrow.,The exam,,1,3,0,0,12:00 AM,1,3,0,0,12:00 AM,1,none
+The exam is three weeks from tomorrow.,The exam,,1,3,0,0,12:00 AM,1,3,0,0,12:00 AM,1,none
+The exam is @ 2pm and lasts for five hours,The exam,,,0,0,0,02:00 PM,,0,0,0,07:00 PM,0,none
+The koala will be set free on the fourth of july @noon,The koala will be set free,,07-04-13,0,0,0,12:00 PM,07-04-13,0,0,0,01:00 PM,0,none
+My mom's birthday is on the 27th,My mom's birthday,,04-27-13,0,0,0,12:00 AM,04-27-13,0,0,0,12:00 AM,1,none
+The biology exam is @ 2pm and goes until 4pm,The biology exam,,,0,0,0,02:00 PM,,0,0,0,04:00 PM,0,none
+"on the 5th to the ninth, we shall eat lobster.",we shall eat lobster,,04-05-13,0,0,0,12:00 AM,04-09-13,0,0,0,12:00 AM,1,none
+Meeting on the 5th at City Center,Meeting,City Center,04-05-13,0,0,0,12:00 AM,04-05-13,0,0,0,12:00 AM,1,none
+"on the 5th to the 9th, we shall eat lobster.",we shall eat lobster,,04-05-13,0,0,0,12:00 AM,04-09-13,0,0,0,12:00 AM,1,none
+The conference is from Feb 12 at 3pm to the 15th.,The conference,,02-12-14,0,0,0,03:00 PM,02-15-14,0,0,0,12:00 AM,0,none
+Birthday party from midnight to noon on March fourth,Birthday party,,03-05-14,0,0,0,12:00 AM,03-05-14,0,0,0,12:00 PM,0,none
+Birthday party from midnight to noon on the fourth of March,Birthday party,,03-05-14,0,0,0,12:00 AM,03-05-14,0,0,0,12:00 PM,0,none
+High school admission results in 1 week,High school admission results,,0,1,0,0,12:00 AM,0,1,0,0,12:00 AM,1,none
+Lunch with John at 123 Main Street on Tuesday,Lunch with John,123 Main Street,tuesday,0,0,0,12:00 AM,tuesday,0,0,0,12:00 AM,1,none
+Dinner at 6,Dinner,,,0,0,0,06:00 PM,,0,0,0,07:00 PM,0,none
+Pick up Joe tomorrow at LAX at 8pm,Pick up Joe,LAX,1,0,0,0,08:00 PM,1,0,0,0,09:00 PM,0,none
+Pick up Joe the day after tomorrow at LAX at 8pm,Pick up Joe,LAX,2,0,0,0,08:00 PM,2,0,0,0,09:00 PM,0,none
+Cycling class @6 for 1.5h,Cycling class,,,0,0,0,06:00 PM,,0,0,0,07:30 PM,0,none
+Next Tuesday Jogging in the Park @8a for 90 min,Jogging,the Park,nexttuesday,0,0,0,08:00 AM,nexttuesday,0,0,0,09:30 AM,0,none
+Trip to Turkey first of july through 5th of aug,Trip to Turkey,,07-01-13,0,0,0,12:00 AM,08-05-13,0,0,0,12:00 AM,1,none
+Trip to Turkey July 1 through 5th of aug,Trip to Turkey,,07-01-13,0,0,0,12:00 AM,08-05-13,0,0,0,12:00 AM,1,none
+"Party Tuesday at Rob's House, 7-11p",Party,Rob's House,tuesday,0,0,0,07:00 PM,tuesday,0,0,0,11:00 PM,0,none
+Lunch with Matthew at 123 Main St. at 1:30 Monday,Lunch with Matthew,123 Main St,monday,0,0,0,01:30 PM,monday,0,0,0,02:30 PM,0,none
+Sam's birthday every year on 5/16,Sam's birthday,,05-16-13,0,0,0,12:00 AM,05-16-13,0,0,0,12:00 AM,1,year
+Lunch every Tuesday until 2/5,Lunch,,tuesday,0,0,0,12:00 AM,02-05-14,0,0,0,12:00 AM,1,week
+Final project due August 15,Final project due,,08-15-13,0,0,0,12:00 AM,08-15-13,0,0,0,12:00 AM,1,none
+Finish important task by Thursday!!,Finish important task,,thursday,0,0,0,12:00 AM,thursday,0,0,0,12:00 AM,1,none
+Paper due next Wednesday,Paper due,,nextwednesday,0,0,0,12:00 AM,nextwednesday,0,0,0,12:00 AM,1,none
+Exam on February 27th at 5pm,Exam,,02-27-14,0,0,0,05:00 PM,02-27-14,0,0,0,06:00 PM,0,none
+Meeting at Noon next Thursday,Meeting,,nextthursday,0,0,0,12:00 PM,nextthursday,0,0,0,01:00 PM,0,none
+Picnic in Central Park next week on Monday at 11am,Picnic,Central Park,nextmonday,0,0,0,11:00 AM,nextmonday,0,0,0,12:00 PM,0,none
+Buy milk tomorrow 5 to 6,Buy milk,,1,0,0,0,05:00 PM,1,0,0,0,06:00 PM,0,none
+"Meet with Cody at Apple Store, Viterbo tomorrow from 5 to 6",Meet with Cody,"Apple Store, Viterbo",1,0,0,0,05:00 PM,1,0,0,0,06:00 PM,0,none
+"Meet with Cody tomorrow at Apple Store, Viterbo from 5 to 6",Meet with Cody,"Apple Store, Viterbo",1,0,0,0,05:00 PM,1,0,0,0,06:00 PM,0,none
+"Meet with Cody tomorrow 5 to 6 at Apple Store, Viterbo",Meet with Cody,"Apple Store, Viterbo",1,0,0,0,05:00 PM,1,0,0,0,06:00 PM,0,none
+Dinner with Rhiannon tomorrow 7pm at New Gen Sushi,Dinner with Rhiannon,New Gen Sushi,1,0,0,0,07:00 PM,1,0,0,0,08:00 PM,0,none
+Brendan's 6th birthday party January 22 at 11:00 at our house.,Brendan's 6th birthday party,our house,01-22-14,0,0,0,11:00 AM,01-22-14,0,0,0,12:00 PM,0,none
+Meeting from 5 - 6,Meeting,,,0,0,0,05:00 PM,,0,0,0,06:00 PM,0,none
+"Meeting at 5 - 6 at Warren Weaver Hall, Rm 1306",Meeting,"Warren Weaver Hall, Rm 1306",,0,0,0,05:00 PM,,0,0,0,06:00 PM,0,none
+Meeting at 5 - 6 at Warren Weaver Hall,Meeting,Warren Weaver Hall,,0,0,0,05:00 PM,,0,0,0,06:00 PM,0,none
+Meeting at 5-630p,Meeting,,,0,0,0,05:00 PM,,0,0,0,06:30 PM,0,none
+Meeting at 5-630,Meeting,,,0,0,0,05:00 PM,,0,0,0,06:30 PM,0,none
+Fondue at Fondue Palace at seven thirty pm,Fondue,Fondue Palace,,0,0,0,07:30 PM,,0,0,0,08:30 PM,0,none
+Fondue at seven o'clock at Fondue Palace,Fondue,Fondue Palace,,0,0,0,07:00 PM,,0,0,0,08:00 PM,0,none
+Fondue at Fondue Palace at seven thirty,Fondue,Fondue Palace,,0,0,0,07:30 PM,,0,0,0,08:30 PM,0,none
+Fondue at seven at Fondue Palace,Fondue,Fondue Palace,,0,0,0,07:00 PM,,0,0,0,08:00 PM,0,none
+Fondue at 7 at Fondue Palace,Fondue,Fondue Palace,,0,0,0,07:00 PM,,0,0,0,08:00 PM,0,none
+Dinner with Rocko at Main Street from 6 to 7,Dinner with Rocko,Main Street,,0,0,0,06:00 PM,,0,0,0,07:00 PM,0,none
+"Dinner at 45 Hilldale Lane, Port Washington, NY, United States from 6 to 8",Dinner,"45 Hilldale Lane, Port Washington, NY, United States",,0,0,0,06:00 PM,,0,0,0,08:00 PM,0,none
+Lunch with Preshit tomorrow at 8 PM until 11:20,Lunch with Preshit,,1,0,0,0,08:00 PM,1,0,0,0,11:20 PM,0,none
+Lunch with Preshit tomorrow at 8 until 11:20,Lunch with Preshit,,1,0,0,0,08:00 AM,1,0,0,0,11:20 AM,0,none
+Lunch with Preshit tomorrow at about 8 till 11:20,Lunch with Preshit,,1,0,0,0,08:00 AM,1,0,0,0,11:20 AM,0,none
+Ski Corbet's Couloir tomorrow morning at 8,Ski Corbet's Couloir,,1,0,0,0,08:00 AM,1,0,0,0,09:00 AM,0,none
+"Graduate Computer Graphics at NYU, West 4th St., New York, from 5 - 7",Graduate Computer Graphics,"NYU, West 4th St., New York",,0,0,0,05:00 PM,,0,0,0,07:00 PM,0,none
+"Graduate Computer Graphics at NYU, 16 East 4th Street, New York, from 5 - 7",Graduate Computer Graphics,"NYU, 16 East 4th Street, New York",,0,0,0,05:00 PM,,0,0,0,07:00 PM,0,none
+"At Laguna Beach, CA, United States, surfing lessons every tuesday at 0800",surfing lessons,"Laguna Beach, CA, United States",tuesday,0,0,0,08:00 AM,tuesday,0,0,0,09:00 AM,0,week
+"Star gazing with Jen at the Custer Observatory, Southold, NY on Saturday from 10-11pm",Star gazing with Jen,"the Custer Observatory, Southold, NY",saturday,0,0,0,10:00 PM,saturday,0,0,0,11:00 PM,0,none
+"WWDC 2013 at Moscone West, San Fransisco, CA June 11th to 15th",WWDC 2013,"Moscone West, San Fransisco, CA",06-11-13,0,0,0,12:00 AM,06-15-13,0,0,0,12:00 AM,1,none
+dec 1 at 3pm - 11,,,12-01-13,0,0,0,03:00 PM,12-01-13,0,0,0,11:00 PM,0,none
+I work from 1am - 6pm,I work,,,0,0,0,01:00 AM,,0,0,0,06:00 PM,0,none
+dec 1st at 9am through dec fifth 8pm,,,12-01-13,0,0,0,09:00 AM,12-05-13,0,0,0,08:00 PM,0,none
+Lunch with becca at cafe thu 1-2,Lunch with becca,cafe,thursday,0,0,0,01:00 PM,thursday,0,0,0,02:00 PM,0,none
+"lunch with John at ""Taco Tuesdays"" Friday 12 pm",lunch with John,Taco Tuesdays,friday,0,0,0,12:00 PM,friday,0,0,0,01:00 PM,0,none
+Volleyball at 5pm,Volleyball,,,0,0,0,05:00 PM,,0,0,0,06:00 PM,0,none
+Bank holiday 8/14,Bank holiday,,08-14-13,0,0,0,12:00 AM,08-14-13,0,0,0,12:00 AM,1,none
+Staff meeting next Monday at 13:00,Staff meeting,,nextmonday,0,0,0,01:00 PM,nextmonday,0,0,0,02:00 PM,0,none
+Running w/ Pat 2:15 tomorrow for 45 minutes,Running w/ Pat,,1,0,0,0,02:15 PM,1,0,0,0,03:00 PM,0,none
+Running w/ Pat 2:15 - 3 pm tomorrow,Running w/ Pat,,1,0,0,0,02:15 PM,1,0,0,0,03:00 PM,0,none
+National Conference 9/23 - 9/26 in Atlanta,National Conference,Atlanta,09-23-13,0,0,0,12:00 AM,09-26-13,0,0,0,12:00 AM,1,none
+Meeting at work every Monday at 2pm,Meeting,work,monday,0,0,0,02:00 PM,monday,0,0,0,03:00 PM,0,week
+Tennis practice Tuesday 7pm to 9pm weekly,Tennis practice,,tuesday,0,0,0,07:00 PM,tuesday,0,0,0,09:00 PM,0,week
+Manicure on 9/1 every month,Manicure,,09-01-13,0,0,0,12:00 AM,09-01-13,0,0,0,12:00 AM,1,month
+Mom's birthday June 19 yearly,Mom's birthday,,06-19-13,0,0,0,12:00 AM,06-19-13,0,0,0,12:00 AM,1,year
+Wedding anniversary July 3 yearly,Wedding anniversary,,07-03-13,0,0,0,12:00 AM,07-03-13,0,0,0,12:00 AM,1,year
+Baseball Game every Thursday for 10 weeks,Baseball Game,,thursday,0,0,0,12:00 AM,0,10,0,0,12:00 AM,1,week
+Language Class every Wednesday 7-8pm for 5 months,Language Class,,wednesday,0,0,0,07:00 PM,0,0,5,0,08:00 PM,0,week
+Appointment at Somewhere on June 3rd 10am-10:25am,Appointment,Somewhere,06-03-13,0,0,0,10:00 AM,06-03-13,0,0,0,10:25 AM,0,none
+Lunch tomorrow 15:00 in room 2,Lunch,room 2,1,0,0,0,03:00 PM,1,0,0,0,04:00 PM,0,none
+Lunch with English Project Team at Fountain Dining Hall 12:15pm Thursday,Lunch with English Project Team,Fountain Dining Hall,thursday,0,0,0,12:15 PM,thursday,0,0,0,01:15 PM,0,none
+Test event on 3/13 at 245 until 4 at 666 Main Street,Test event,666 Main Street,03-13-14,0,0,0,02:45 PM,03-13-14,0,0,0,04:00 PM,0,none
+Conference call Mondays at 9am from 3/26 thru 4/16,Conference call,,04-01-13,0,0,0,09:00 AM,04-16-13,0,0,0,10:00 AM,0,week
+Workout at Power 10 Thursdays at 11:30,Workout,Power 10,thursday,0,0,0,11:30 AM,thursday,0,0,0,12:30 PM,0,week
+Call John Bates to apologize tomorrow at 9,Call John Bates to apologize,,1,0,0,0,09:00 AM,1,0,0,0,10:00 AM,0,none
+Call John Bates with apology tomorrow at 9,Call John Bates with apology,,1,0,0,0,09:00 AM,1,0,0,0,10:00 AM,0,none
+lunch with Kohli tomorrow at 4 to 8 am,lunch with Kohli,,1,0,0,0,04:00 AM,1,0,0,0,08:00 AM,0,none
+Tennis with David and Shaun saturdays at 10:30,Tennis with David and Shaun,,saturday,0,0,0,10:30 AM,saturday,0,0,0,11:30 AM,0,week
+Tennis with David saturdays at 10:30,Tennis with David,,saturday,0,0,0,10:30 AM,saturday,0,0,0,11:30 AM,0,week
+Finish working on the platter in an hour at home,Finish working on the platter,home,,0,0,0,1+0,,0,0,0,2+0,0,none
+"Meeting with Johnny, Marco, and Alexandri to talk about the research 5pm tomorrow","Meeting with Johnny, Marco, and Alexandri to talk about the research",,1,0,0,0,05:00 PM,1,0,0,0,06:00 PM,0,none
+"At the plaza, every monday talk to Joe about money laundering at 6:30Pm to 1:15",talk to Joe about money laundering,the plaza,monday,0,0,0,06:30 PM,tuesday,0,0,0,01:15 AM,0,week
+Dinner with Ben Kerwing 2 weeks from wednesday at Lupa from 7 to 9,Dinner with Ben Kerwing,Lupa,1,2,0,0,07:00 PM,1,2,0,0,09:00 PM,0,none
+Dinner with Ben Kerwing two weeks from wednesday at Lupa from 7 to 9,Dinner with Ben Kerwing,Lupa,1,2,0,0,07:00 PM,1,2,0,0,09:00 PM,0,none
+dinner with Erin tomorrow evening,dinner with Erin,,1,0,0,0,06:00 PM,1,0,0,0,07:00 PM,0,none
+Meeting this evening,Meeting,,0,0,0,0,06:00 PM,0,0,0,0,07:00 PM,0,none
+"at Los Angeles, CA, United States, from 5-6 test with paul",test with paul,"Los Angeles, CA, United States",0,0,0,0,05:00 PM,0,0,0,0,06:00 PM,0,none
+"at Los Angeles, CA, United States, from 5 to 6 test with paul",test with paul,"Los Angeles, CA, United States",0,0,0,0,05:00 PM,0,0,0,0,06:00 PM,0,none
+"at Savatore's Pizzeria, Shore Road, Port Washington, NY Dinner",Dinner,"Savatore's Pizzeria, Shore Road, Port Washington, NY",,0,0,0,12:00 AM,,0,0,0,12:00 AM,1,none
+Brunch for Auntie's birthday in Williamsburg April 28th at 12:00p,Brunch for Auntie's birthday,Williamsburg,04-28-13,0,0,0,12:00 PM,04-28-13,0,0,0,01:00 PM,0,none
