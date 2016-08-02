@@ -1,4 +1,6 @@
 var mongoose = require('mongoose');
+mongoose.Promise = require('bluebird');
+// var mongoose = Promise.promisifyAll(require('mongoose'));
 
 var EventSchema = new mongoose.Schema({
 	summary: { type: String, required: true },
