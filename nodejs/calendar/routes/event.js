@@ -5,7 +5,12 @@ var mo = require('moment-timezone')
 
 router.get('/events/:yr', (req, res) => {
 	Event.yrAgg(Number(req.params.yr))
-		.then((events) => res.status(200).json(events)).catch((err) => res.status(400).json(err))
+		.then((events) => {
+			if (!events || !events.length) { return res.status(404); }
+			res.status(200).json(events);
+			
+		})
+		.catch((err) => res.status(400).json(err))
 });
 
 router.get('/events/:yr/:mth', (req, res) => {
