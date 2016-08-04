@@ -1,7 +1,9 @@
 Capstone:
 
 Define the Purpose of Your App:
-Users can create events and to-do items with completion dates and display them on a calendar. They will also be able to get more informative metrics related to to-do items such as how long they take to complete and how successful they are at completing them. Based on the priority and due dates of to-do items it can determine what you should be working on at any given time.
+Users can create events and to-do items with completion dates and display them on a calendar. 
+They will also be able to get more informative metrics related to to-do items such as how long they take to complete and how successful they are at completing them. 
+Based on the priority and due dates of to-do items it can determine what you should be working on at any given time.
 
 
 
