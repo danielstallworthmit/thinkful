@@ -1,0 +1,6 @@
+framework module Pods_Photo_Search_ExampleTests {
+  umbrella header "Pods-Photo Search ExampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
