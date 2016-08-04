@@ -1,0 +1,15 @@
+Capstone:
+
+Define the Purpose of Your App:
+Users can create events and to-do items with completion dates and display them on a calendar. They will also be able to get more informative metrics related to to-do items such as how long they take to complete and how successful they are at completing them. Based on the priority and due dates of to-do items it can determine what you should be working on at any given time.
+
+
+
+Determine the Feature Set You'll Build:
+Calendar View for day, week, month, year
+Enter Events with start and end times, priority, location, repeats, people involved in event, and notes
+Enter to-do items with name, start and end times, priority, repeats, people involved in event, and notes
+View for to-do metrics over last day, week, month, year with completion rate overall and on-time or early completion vs late completion, number outstanding (due dates have not passed and have not been marked complete), number of events coming up, number of items by people involved
+View for suggestions of order in which to complete to-do items coming up (based on priority)
+(Optional if time) Connect to other calendars such as Google Cal and Outlook 
+(Optional if time) Get information related to your events that could be useful in completing them
