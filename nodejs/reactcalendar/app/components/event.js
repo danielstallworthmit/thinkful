@@ -5,7 +5,7 @@ var Event = React.createClass ({
 
     var eventStyle = {
       background: '#fafafa',
-      //width: '12%',
+      width: '100%',
       //height: '17%',
       margin: 2,
       float: 'left',
