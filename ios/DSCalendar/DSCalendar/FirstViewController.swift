@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class FirstViewController: UIViewController {
 
@@ -22,15 +24,25 @@ class FirstViewController: UIViewController {
     
     func showMonthJson(month: Int, year: Int) {
         // if switching to new year, call API to get data for new year
-            jsonTextView.text = getNewYearJson(year)
-            print(jsonTextView.text)
+        getNewYearJson(year)
         // else use the data for the current year already loaded
             // show the month requested
     }
     
-    func getNewYearJson(year: Int) -> String{
+    func getNewYearJson(year: Int) {
         // set current year variable to the new year to compare in showMonthJson 
-        return YearData(year: year).json
+        Alamofire.request(.GET, "http://localhost:3000/events/" + String(year))
+            .responseJSON { response in
+                switch response.result {
+                case .Success(let data):
+                    let json = JSON(data).rawString()!
+                    self.jsonTextView.text = json
+                //json = json.rawString()
+                case .Failure(let error):
+                    print("Error: " + error.localizedDescription)
+                }
+        }
+
     }
 
     override func didReceiveMemoryWarning() {

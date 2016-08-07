@@ -4,9 +4,14 @@ var Day = require('./day')
 var Weeks = React.createClass({
   render() {
     var dayNames = this.props.dayNames
+    var dat = this.props.data
     var days = this.props.weeks.map(function(weeks) {
       return weeks.map(function(week, index){
-        return <Day key={index} week={week} dayNames={dayNames[index]}/>
+        var data = dat.filter(function(datum){
+          return datum.startDay === week
+        })
+        //console.log("data: ", data)
+        return <Day key={index} week={week} dayNames={dayNames[index]} data={data}/>
       })
     })
 
