@@ -8,6 +8,7 @@ target 'DSCalendar' do
   # Pods for DSCalendar
   pod 'Alamofire', '~> 3.4'
   pod 'SwiftyJSON'
+  pod 'JTAppleCalendar'
 
   target 'DSCalendarTests' do
     inherit! :search_paths
