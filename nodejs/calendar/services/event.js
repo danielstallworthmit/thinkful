@@ -28,7 +28,7 @@ exports.days = (year, month, daysStart, daysEnd, userid) => Event.find({'userid'
 
 exports.save = (event) => Event.create(event)
 
-exports.update = (id, event, userid) => Event.findAndUpdate({'_id': id, 'userid': userid}, event)
+exports.update = (id, event, userid) => Event.findOneAndUpdate({'_id': id, 'userid': userid}, event)
 
-exports.del = (id, userid) => Event.findAndRemove({'_id': id, 'userid': userid})
+exports.del = (id, userid) => Event.findOneAndRemove({'_id': id, 'userid': userid})
 
