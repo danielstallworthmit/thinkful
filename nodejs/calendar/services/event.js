@@ -1,9 +1,9 @@
 var Event = require('../models/event');
 
-exports.list = () => Event.find()
+exports.list = (userid) => Event.find({'userid': userid})
 
-exports.yrAgg = (year) => Event.aggregate([
-											{'$match': {'$or': [{'startYear': year}, {'endYear': year}]}}, 
+exports.yrAgg = (year, userid) => Event.aggregate([
+											{'$match': {'userid': userid, '$or': [{'startYear': year}, {'endYear': year}]}}, 
 											{'$project': {'startDay': 1, 'endDay': 1, 
 												'dayCount': {'$cond': [ { '$ne': [ '$startDay', '$endDay' ] }, ['$startDay', '$endDay'], ['$startDay'] ]},
 												'monthCount': {'$cond': [ { '$ne': [ '$startMonth', '$endMonth' ] }, ['$startMonth', '$endMonth'], ['$startMonth'] ]}
@@ -13,12 +13,12 @@ exports.yrAgg = (year) => Event.aggregate([
 											{'$group': {'_id': {"month": "$monthCount", "day": '$dayCount'}, 'count': {'$sum': 1}}}
 										  ])
 
-exports.month = (year, month) => Event.find().and([
+exports.month = (year, month, userid) => Event.find({'userid': userid}).and([
 													{'$or': [{'startYear': year}, {'endYear': year}]},
 													{'$or': [{'startMonth': month}, {'endMonth': month}]}
 												])
 
-exports.days = (year, month, daysStart, daysEnd) => Event.find().and([
+exports.days = (year, month, daysStart, daysEnd, userid) => Event.find({'userid': userid}).and([
 																	{'$or': [{'startYear': year}, {'endYear': year}]},
 																	{'$or': [{'startMonth': month}, {'endMonth': month}]},
 																	{'$or': [{'startDay': {'$gte': daysStart, '$lte': daysEnd}}, 
@@ -28,7 +28,7 @@ exports.days = (year, month, daysStart, daysEnd) => Event.find().and([
 
 exports.save = (event) => Event.create(event)
 
-exports.update = (id, event) => Event.findByIdAndUpdate(id, event)
+exports.update = (id, event, userid) => Event.findAndUpdate({'_id': id, 'userid': userid}, event)
 
-exports.del = (id) => Event.findByIdAndRemove(id)
+exports.del = (id, userid) => Event.findAndRemove({'_id': id, 'userid': userid})
 

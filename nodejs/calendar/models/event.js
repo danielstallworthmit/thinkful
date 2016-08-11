@@ -13,7 +13,8 @@ var EventSchema = new mongoose.Schema({
 	endYear: {type: Number},
 	endMonth: {type: Number},
 	endDay: {type: Number},
-	timeZone: {type: String}
+	timeZone: {type: String},
+	userid: {type: String}
 });
 
 var Event = db.events.model('Event', EventSchema);
