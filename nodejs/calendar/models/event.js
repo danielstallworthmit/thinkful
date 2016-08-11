@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
+var db = require('../db/connect');
 // var mongoose = Promise.promisifyAll(require('mongoose'));
 
 var EventSchema = new mongoose.Schema({
@@ -15,6 +16,6 @@ var EventSchema = new mongoose.Schema({
 	timeZone: {type: String}
 });
 
-var Event = mongoose.model('Event', EventSchema);
+var Event = db.events.model('Event', EventSchema);
 
 module.exports = Event;

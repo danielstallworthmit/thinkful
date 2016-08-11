@@ -1,4 +1,6 @@
 var mongoose = require('mongoose');
+mongoose.Promise = require('bluebird');
+var db = require('../db/connect');
 var bcrypt = require('bcrypt');
 
 var UserSchema = new mongoose.Schema({
@@ -23,6 +25,6 @@ UserSchema.methods.validatePassword = function(password, callback) {
     });
 };
 
-var User = mongoose.model('User', UserSchema);
+var User = db.auth.model('User', UserSchema);
 
 module.exports = User;

@@ -2,7 +2,19 @@ require('./db/connect');
 var express = require('express');
 var bodyParser = require('body-parser');
 var eventRoutes = require('./routes/event');
+var userRoutes = require('./routes/user');
+var User = require('./services/user');
+var BasicStrategy = require('passport-http').BasicStrategy;
+var passport = require('passport');
 var app = express();
+
+var strategy = new BasicStrategy(function(username, password, callback) {
+    User.setStrategy(username, password, callback)
+});
+
+passport.use(strategy);
+
+app.use(passport.initialize());
 
 // Add headers
 app.use(function (req, res, next) {
@@ -27,7 +39,8 @@ app.use(function (req, res, next) {
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
-app.use('/', eventRoutes);
+app.use('/', passport.authenticate('basic', {session: false}), eventRoutes);
+app.use('/', userRoutes);
 app.use('*', function(req, res) {
 	res.status(404).json({ message: 'Not Found' });
 });
