@@ -1,4 +1,4 @@
-var Event = require('../models/event');
+var Event = require('../models/event')
 
 exports.list = (userid) => Event.find({'userid': userid})
 
@@ -26,7 +26,10 @@ exports.days = (year, month, daysStart, daysEnd, userid) => Event.find({'userid'
 																	}
 																])
 
-exports.save = (event) => Event.create(event)
+exports.save = (event, userid) => {
+	event.userid = userid
+	return Event.create(event)
+}
 
 exports.update = (id, event, userid) => Event.findOneAndUpdate({'_id': id, 'userid': userid}, event)
 

@@ -39,7 +39,7 @@ app.use(function (req, res, next) {
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
-app.use('/', passport.authenticate('basic', {session: false}), eventRoutes);
+app.use('/', eventRoutes);
 app.use('/', userRoutes);
 app.use('*', function(req, res) {
 	res.status(404).json({ message: 'Not Found' });

@@ -13,17 +13,21 @@ var app = server.app;
 
 chai.use(chaiHttp);
 
-// It should return Unauthorized for all actions if not a logged in user
+// + It should return Unauthorized for all actions if not a logged in user
 
-// It should create a new user on post to /users
-// It should not be able to create a username that already exists
-
+// On login:
 // It should get all items on get from /events
 // It should add an event on post to /events
 // It should edit edit an item on put to /events/:id
 // It should delete an item on delete to /events/:id
 
-// It should only create/edit/delete events for logged in user
+// It should not be able to create a username that already exists
+// {
+//   "message": "User save Internal server error"
+// }
+// It should create a new user on post to /users
+
+// It should only create/edit/delete events for logged in user, not other users
 // It should return 404 for events that do not exist on get/put/delete
 // It should not allow an event start date to be after the end date
 // It should create year, month, day, hour, minute for start and end dates
