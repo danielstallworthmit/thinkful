@@ -34,14 +34,9 @@ chai.use(chaiHttp);
 // It should associate an event with a user
 
 describe('Events', function() {
-	before(function(done) {
-		seed.eventsCreate(function(){
-			done();
-		});
-		seed.usersCreate(function(){
-			done();
-		});
-	});
+	before(function(done) { seed.eventsCreate(done) });
+	before(function(done) { seed.usersCreate(done) });
+
 	var id3 = '';
 
 	it('should return Unauthorized if not a logged in user on get', function(done){
