@@ -19,7 +19,7 @@ exports.eventsCreate = function(cb) {
 exports.usersCreate = function(cb) {
 	User.create(
 		{"username": "billy", "password": "pass"},
-		{"username": "joe", "password": "pass"},
+		{"username": "jim", "password": "pass"},
 		{"username": "craig", "password": "pass"},
 		function(err, users) {
 			if(err) {

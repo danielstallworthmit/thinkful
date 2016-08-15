@@ -3,9 +3,9 @@
 		"url": "mongodb://danieljs:pw1234@ds023704.mlab.com:23704/dcalendar"
 	},
 	"test": {
-		"url": "mongodb://localhost/calendar"
+		"url": "mongodb://127.0.0.1:27017/calendar"
 	},
 	"development": {
-		"url": "mongodb://localhost/calendar"
+		"url": "mongodb://127.0.0.1:27017/calendar"
 	}
 }
