@@ -110,11 +110,9 @@ describe('Events', function() {
 	
 	
 	after(function(done) {
-		Event.remove(function() {
-			done();
-		});
-		User.remove(function() {
-			done();
-		});
+		Event.remove(function() { done(); });
+	});
+	after(function(done) {
+		User.remove(function() { done(); });
 	});
 });
