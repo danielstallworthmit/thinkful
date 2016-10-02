@@ -14,6 +14,10 @@ var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July'
 
 var baseUrl = 'http://localhost:3000/events'
 
+var config = {
+  headers: { Authorization: 'Basic dGltbXk6cGFzcw=='}
+}
+
 //console.log(data)
 
 console.log(cal.monthText())
@@ -44,7 +48,8 @@ var Main = React.createClass({
         month = 11
       } 
       var self = this
-      axios.get(baseUrl + '/' + year + '/' + (month + 1))
+      console.log(baseUrl + '/' + year + '/' + (month + 1))
+      axios.get(baseUrl + '/' + year + '/' + (month + 1), config)
             .then(function(response){
               self.setState({data: response.data})
               console.log(response.data)
@@ -68,7 +73,8 @@ var Main = React.createClass({
         month = 0
       }
       var self = this
-      axios.get(baseUrl + '/' + year + '/' + (month + 1))
+      console.log(baseUrl + '/' + year + '/' + (month + 1))
+      axios.get(baseUrl + '/' + year + '/' + (month + 1), config)
             .then(function(response){
               self.setState({data: response.data})
               console.log(response.data)
@@ -83,7 +89,8 @@ var Main = React.createClass({
       var month = now.getMonth()
       var year = now.getFullYear()
       var self = this
-      axios.get(baseUrl + '/' + year + '/' + (month + 1))
+      console.log(baseUrl + '/' + year + '/' + (month + 1))
+      axios.get(baseUrl + '/' + year + '/' + (month + 1), config)
             .then(function(response){
               self.setState({data: response.data})
               console.log(response.data)

@@ -10,6 +10,11 @@ router.get('/hidden', passport.authenticate('basic', {session: false}), function
     });
 });
 
+router.get('/logout', (req, res) => {
+  req.logout();
+  res.redirect('/');
+});
+
 var jsonParser = bodyParser.json();
 
 router.post('/users', jsonParser, (req, res) => {

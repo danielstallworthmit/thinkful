@@ -1,12 +1,12 @@
 phrase,summary,location,daysFromNowStart,weeksFromNowStart,monthsFromNowStart,yearsFromNowStart,startHour,daysFromNowEnd,weeksFromNowEnd,monthsFromNowEnd,yearsFromNowEnd,endHour,allDayFlag,repeatFrequency
-Grocery shopping at King Kullen Thursday at 11:30pm,Grocery shopping,King Kullen,thursday,0.0,0.0,0.0,11:30 PM,friday,0.0,0.0,0.0,12:30 AM,0,none
-Grocery shopping at Waldbaums from 4pm to 5pm,Grocery shopping,Waldbaums,,0.0,0.0,0.0,04:00 PM,,0.0,0.0,0.0,05:00 PM,0,none
-Clothes shopping Wednesday at 5:35pm at Nordstroms,Clothes shopping,Nordstroms,wednesday,0.0,0.0,0.0,05:35 PM,wednesday,0.0,0.0,0.0,06:35 PM,0,none
+Grocery shopping at King Kullen Thursday at 11:30pm,Grocery shopping,King Kullen,thursday,0,0,0,11:30 PM,friday,0,0,0,12:30 AM,0,none
+Grocery shopping at Waldbaums from 4pm to 5pm,Grocery shopping,Waldbaums,,0,0,0,04:00 PM,,0,0,0,05:00 PM,0,none
+Clothes shopping Wednesday at 5:35pm at Nordstroms,Clothes shopping,Nordstroms,wednesday,0,0,0,05:35 PM,wednesday,0,0,0,06:35 PM,0,none
 Clothes shopping at Nordstroms in a month at 17:45,Clothes shopping,Nordstroms,0,0,1,0,05:45 PM,0,0,1,0,06:45 PM,0,none
 Clothes shopping at Nordstroms next Thursday at 5p,Clothes shopping,Nordstroms,nextthursday,0,0,0,05:00 PM,nextthursday,0,0,0,06:00 PM,0,none
 Clothes shopping at Nordstroms tomorrow at 0600,Clothes shopping,Nordstroms,1,0,0,0,06:00 AM,1,0,0,0,07:00 AM,0,none
 Clothes shopping at Nordstroms thursday to saturday,Clothes shopping,Nordstroms,thursday,0,0,0,12:00 AM,saturday,0,0,0,12:00 AM,1,none
-Clothes shopping at Nordstroms 23 sep in an hour,Clothes shopping,Nordstroms,09-23-13,0,0,0,1+0,09-23-13,0,0,0,2+0,0,none
+Clothes shopping at Nordstroms 23 sep in an hour,Clothes shopping,Nordstroms,09-23-13,0,0,0, ,09-23-13,0,0,0,2+0,0,none
 Shopping at Nordstroms 2 weeks from tomorrow in an hour,Shopping,Nordstroms,1,2,0,0,1+0,1,2,0,0,2+0,0,none
 Family vacation from 8/9-8/18,Family vacation,,08-09-13,0,0,0,12:00 AM,08-18-13,0,0,0,12:00 AM,1,none
 Family vacation from 8/1-8 at The Sandy Lane,Family vacation,The Sandy Lane,08-01-13,0,0,0,12:00 AM,08-08-13,0,0,0,12:00 AM,0,none
